@@ -13,6 +13,7 @@
                   >
                   </div>
                   <div style="text-align: center;">
+                    <a href="/">
                     <img
                     src="{{ section.settings.centro_logo | img_url: 'master' }}"
                     loading="lazy"
@@ -20,6 +21,7 @@
                     style="cursor: pointer;"
                     alt="{{ section.settings.centro_logo.alt | default: shop.name | escape }}"
                   >
+                  </a>
                   </div>
                   <div class="d-flex justify-content-center">
                     <img
@@ -71,6 +73,7 @@
                   </div>
                   <div class="d-flex justify-content-center">
                     <img
+                    onclick="window.open('youtube.com')"
                     src="{{ section.settings.busqueda_producto | img_url: 'master' }}"
                     loading="lazy"
                     class="me-3"
@@ -92,29 +95,29 @@
         </div>
 
         <div class="formOpenLinks">
-            {% for link in linklists.abierto.links %}
-            {% assign child_list_handle = link.title | handleize %}
-            {% if linklists[child_list_handle].links != blank %}
-            <li class="site-nav--has-dropdown{% if link.active %} site-nav--active{% endif %}" aria-haspopup="true">
-              <a href="{{ link.url }}" class="site-nav__link">
-                {{ link.title }}
-                <span class="icon icon-arrow-down" aria-hidden="true"></span>
-              </a>
-              <ul class="site-nav__dropdown">
-                {% for childlink in linklists[child_list_handle].links %}
-                <li{% if childlink.active %} class="site-nav--active" {% endif %}>
-                  <a href="{{ childlink.url }}" class="site-nav__link">{{ childlink.title | escape }}</a>
-            </li>
-            {% endfor %}
-            </ul>
-            </li>
-            {% else %}
-            <li {% if link.active %}class="site-nav--active" {% endif %}>
-              <a href="{{ link.url }}" class="site-nav__link">{{ link.title }}</a>
-                
-            </li>
-            {% endif %}
-            {% endfor %}
+   {% for link in linklists.abierto.links %}
+        {% assign child_list_handle = link.title | handleize %}
+        {% if linklists[child_list_handle].links != blank %}
+        <li class="site-nav--has-dropdown{% if link.active %} site-nav--active{% endif %}" aria-haspopup="true">
+          <a href="{{ link.url }}" class="site-nav__link">
+            {{ link.title }}
+            <span class="icon icon-arrow-down" aria-hidden="true"></span>
+          </a>
+          <ul class="site-nav__dropdown">
+            {% for childlink in linklists[child_list_handle].links %}
+            <li{% if childlink.active %} class="site-nav--active" {% endif %}>
+              <a href="{{ childlink.url }}" class="site-nav__link">{{ childlink.title | escape }}</a>
+        </li>
+        {% endfor %}
+        </ul>
+        </li>
+        {% else %}
+        <li {% if link.active %}class="site-nav--active" {% endif %}>
+          <a href="{{ link.url }}" class="site-nav__link">{{ link.title }}</a>
+            
+        </li>
+        {% endif %}
+        {% endfor %}
         </div>
 
      
