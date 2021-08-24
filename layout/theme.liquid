@@ -97,6 +97,7 @@
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
     {{ 'bootstrap.css' | asset_url | stylesheet_tag }}
+    {{ 'wiboostyle.css' | asset_url | stylesheet_tag }}
     
 
     {%- unless settings.type_body_font.system? -%}
@@ -115,7 +116,9 @@
     </a>
 
     {% section 'announcement-bar' %}
-    {% section 'header' %}
+   
+   
+    {% section 'fromlares-header' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
