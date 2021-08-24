@@ -1,0 +1,179 @@
+<header class="menuComponent">
+    <div class="container-fluid my-4 p-5">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-around d-flex align-items-center" {{ block.shopify_attributes }}>
+                  <div>
+                    <img
+                    src="{{ section.settings.izquierda_logo | img_url: 'master' }}"
+                    loading="lazy"
+                    class="animationRotate"
+                    width="30"
+                    style="cursor: pointer;"
+                    alt="{{ section.settings.izquierda_logo.alt | default: shop.name | escape }}"
+                  >
+                  </div>
+                  <div style="text-align: center;">
+                    <img
+                    src="{{ section.settings.centro_logo | img_url: 'master' }}"
+                    loading="lazy"
+                    class="topLogoFromlares"
+                    style="cursor: pointer;"
+                    alt="{{ section.settings.centro_logo.alt | default: shop.name | escape }}"
+                  >
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img
+                    src="{{ section.settings.busqueda_producto | img_url: 'master' }}"
+                    loading="lazy"
+                    class="me-3"
+                    width="20"
+                    style="cursor: pointer;"
+                    alt="{{ section.settings.busqueda_producto.alt | default: shop.name | escape }}"
+                  >
+
+                    <img
+                    src="{{ section.settings.carrito_compras | img_url: 'master' }}"
+                    loading="lazy"
+                    class="me-3"
+                    width="20"
+                    style="cursor: pointer;"
+                    alt="{{ section.settings.carrito_compras.alt | default: shop.name | escape }}"
+                  >
+                  </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="formOpen animate__animated animate__fadeInDown" style="display: none;">
+    <div class="container-fluid my-4 p-5">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-around d-flex align-items-center" {{ block.shopify_attributes }}>
+                  <div>
+                    <img
+                    src="{{ section.settings.izquierda_logo | img_url: 'master' }}"
+                    loading="lazy"
+                    class="animationRotate"
+                    style="cursor: pointer;"
+                    width="30"
+                    alt="{{ section.settings.izquierda_logo.alt | default: shop.name | escape }}"
+                  >
+                  </div>
+                  <div style="text-align: center;">
+                   <a href="/"> <img
+                    src="{{ section.settings.centro_logo | img_url: 'master' }}"
+                    loading="lazy"
+                    style="cursor: pointer;"
+                    class="topLogoFromlares"
+                    alt="{{ section.settings.centro_logo.alt | default: shop.name | escape }}"
+                  >
+                </a>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <img
+                    src="{{ section.settings.busqueda_producto | img_url: 'master' }}"
+                    loading="lazy"
+                    class="me-3"
+                    style="cursor: pointer;"
+                    width="20"
+                    alt="{{ section.settings.busqueda_producto.alt | default: shop.name | escape }}"
+                  >
+
+                    <img
+                    src="{{ section.settings.carrito_compras | img_url: 'master' }}"
+                    loading="lazy"
+                    class="me-3"
+                    style="cursor: pointer;"
+                    width="20"
+                    alt="{{ section.settings.carrito_compras.alt | default: shop.name | escape }}"
+                  >
+                  </div>
+            </div>
+        </div>
+
+        <div class="formOpenLinks">
+            {% for link in linklists.abierto.links %}
+            {% assign child_list_handle = link.title | handleize %}
+            {% if linklists[child_list_handle].links != blank %}
+            <li class="site-nav--has-dropdown{% if link.active %} site-nav--active{% endif %}" aria-haspopup="true">
+              <a href="{{ link.url }}" class="site-nav__link">
+                {{ link.title }}
+                <span class="icon icon-arrow-down" aria-hidden="true"></span>
+              </a>
+              <ul class="site-nav__dropdown">
+                {% for childlink in linklists[child_list_handle].links %}
+                <li{% if childlink.active %} class="site-nav--active" {% endif %}>
+                  <a href="{{ childlink.url }}" class="site-nav__link">{{ childlink.title | escape }}</a>
+            </li>
+            {% endfor %}
+            </ul>
+            </li>
+            {% else %}
+            <li {% if link.active %}class="site-nav--active" {% endif %}>
+              <a href="{{ link.url }}" class="site-nav__link">{{ link.title }}</a>
+                
+            </li>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+     
+
+    </div>
+</div>
+
+{% javascript %}
+    $(document).ready(function(){
+        $(document).on("click", ".animationRotate", function () {
+           $(".formOpen").toggle();
+        });
+        
+    })
+   
+{% endjavascript %}
+
+{%- if request.page_type == 'index' -%}
+  {% assign potential_action_target = shop.url | append: routes.search_url | append: "?q={search_term_string}" %}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": {{ shop.name | json }},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {{ potential_action_target | json }},
+        "query-input": "required name=search_term_string"
+      },
+      "url": {{ shop.url | append: page.url | json }}
+    }
+  </script>
+{%- endif -%}
+
+
+{% schema %}
+{
+  "name": "t:sections.header.name",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "izquierda_logo",
+      "label": "Círculo"
+    },
+    {
+      "type": "image_picker",
+      "id": "centro_logo",
+      "label": "Logotipo Fromlares"
+    },
+    {
+      "type": "image_picker",
+      "id": "busqueda_producto",
+      "label": "Busqueda"
+    },
+    {
+      "type": "image_picker",
+      "id": "carrito_compras",
+      "label": "Carrito"
+    }
+  ]
+}
+{% endschema %}

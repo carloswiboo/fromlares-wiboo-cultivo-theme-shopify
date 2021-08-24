@@ -1,4 +1,67 @@
+.animationRotate {
+  -webkit-animation: rotation 2s infinite linear;
+  cursor: pointer !important;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
 .announcement-bar {
   background: radial-gradient(#d89fe0, #e0cde6);
   color: white;
+}
+
+.menuComponent {
+  width: 100%;
+  background-color: white;
+}
+
+.topLogoFromlares {
+  width: 15%;
+}
+
+@media (max-width: 575.98px) {
+  .topLogoFromlares {
+    width: 50%;
+  }
+
+  .formOpenLinks {
+    font-size: 2rem !important;
+  }
+}
+
+.formOpen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(#d89fe0, #e0cde6);
+  z-index: 5000;
+}
+
+.formOpenLinks {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #36499b !important;
+  text-align: right;
+  font-size: 3rem;
+}
+
+.site-nav__link {
+  color: #36499b !important;
+  text-decoration: none;
+}
+
+.site-nav--active {
+  list-style-type: none !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
