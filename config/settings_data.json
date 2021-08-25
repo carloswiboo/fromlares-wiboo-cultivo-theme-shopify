@@ -67,6 +67,30 @@
           "enable_language_selector": true,
           "payment_enable": true
         }
+      },
+      "image-banner": {
+        "type": "image-banner",
+        "blocks": {
+          "0e8aa514-512f-4ae2-9753-e26a3853a25b": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Recurso_1-8.png",
+              "title": "Image slide",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "0e8aa514-512f-4ae2-9753-e26a3853a25b"
+        ],
+        "settings": {
+          "text_size": "medium"
+        }
+      },
+      "inicio-baner-producto-carousel": {
+        "type": "inicio-baner-producto-carousel",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
