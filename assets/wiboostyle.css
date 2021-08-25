@@ -70,3 +70,37 @@
 {
     list-style: none !important;
 }
+
+
+.carouselduqueprincipal
+{
+  width: 100%;
+  text-align: center;
+}
+.carouselduqueprincipal div
+{
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+.carouselduqueprincipal h1
+{
+  padding-top: 35vh;
+  padding-bottom: 35vh;
+  color: white;
+}
+
+
+.buttonFromlares
+{
+  background : #EFEFEF;
+  background : rgba(239, 239, 239, 1);
+  border-radius : 7px;
+  -moz-border-radius : 7px;
+  -webkit-border-radius : 7px;
+
+padding: 15px;
+  color: #36499B;
+  display: inline-block;
+}
