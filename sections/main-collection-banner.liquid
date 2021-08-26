@@ -1,5 +1,24 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 
+
+
+
+
+
+<div class="container-fluid g-0">
+  <div class="row g-0">
+      <div class="col-md-3">
+        <img style="width: 100%;" src="{{'fromlaresCuadro.svg' | asset_url}}" alt="logotipo Fromlares" class="px-4"/>
+      </div>
+      <div class="col-md-9" style="height: 100vh; background-position:center !important; background-size: cover !important; background: url({{ collection.image.src | img_url: 'master' }});">
+
+      </div>
+  </div>
+</div>
+
+
+
+
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}">
   <div class="collection-hero__inner page-width">
     <div class="collection-hero__text-wrapper">

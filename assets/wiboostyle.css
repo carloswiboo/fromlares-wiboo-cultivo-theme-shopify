@@ -128,3 +128,8 @@ h1, h2, h3, h4, h5, h6
 {
   color: #36499B !important;
 }
+
+.facets__display
+{
+  background-color: white !important;
+}
