@@ -123,3 +123,8 @@ footer a
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
+
+h1, h2, h3, h4, h5, h6
+{
+  color: #36499B !important;
+}
