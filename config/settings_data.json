@@ -78,10 +78,19 @@
               "title": "Image slide",
               "link": ""
             }
+          },
+          "b014cec1-225d-403c-bc4c-c41b43697580": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/woman-infront-of-tree-with-berries.jpeg",
+              "title": "Image slide",
+              "link": ""
+            }
           }
         },
         "block_order": [
-          "0e8aa514-512f-4ae2-9753-e26a3853a25b"
+          "0e8aa514-512f-4ae2-9753-e26a3853a25b",
+          "b014cec1-225d-403c-bc4c-c41b43697580"
         ],
         "settings": {
           "text_size": "medium"
