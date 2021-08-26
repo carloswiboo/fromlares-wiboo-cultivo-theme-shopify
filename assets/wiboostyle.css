@@ -101,3 +101,18 @@ html {
   color: #36499b;
   display: inline-block;
 }
+
+
+footer
+{
+  color: #36499B !important;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+}
+footer a
+{
+  color: #36499B !important;
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
