@@ -1,3 +1,7 @@
+html {
+  font-size: 0.8rem;
+}
+
 .animationRotate {
   -webkit-animation: rotation 2s infinite linear;
   cursor: pointer !important;
@@ -32,7 +36,7 @@
   }
 
   .formOpenLinks {
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
   }
 }
 
@@ -52,7 +56,7 @@
   right: 20px;
   color: #36499b !important;
   text-align: right;
-  font-size: 3rem;
+  font-size: 1.8rem;
 }
 
 .site-nav__link {
@@ -66,41 +70,34 @@
   margin-bottom: 10px;
 }
 
-.formOpenLinks li
-{
-    list-style: none !important;
+.formOpenLinks li {
+  list-style: none !important;
 }
 
-
-.carouselduqueprincipal
-{
+.carouselduqueprincipal {
   width: 100%;
   text-align: center;
 }
-.carouselduqueprincipal div
-{
- background-position: center;
- background-size: cover;
- background-repeat: no-repeat;
+.carouselduqueprincipal div {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.carouselduqueprincipal h1
-{
+.carouselduqueprincipal h1 {
   padding-top: 35vh;
   padding-bottom: 35vh;
   color: white;
 }
 
+.buttonFromlares {
+  background: #efefef;
+  background: rgba(239, 239, 239, 1);
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
 
-.buttonFromlares
-{
-  background : #EFEFEF;
-  background : rgba(239, 239, 239, 1);
-  border-radius : 7px;
-  -moz-border-radius : 7px;
-  -webkit-border-radius : 7px;
-
-padding: 15px;
-  color: #36499B;
+  padding: 15px;
+  color: #36499b;
   display: inline-block;
 }

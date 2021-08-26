@@ -6,7 +6,7 @@
                     {%- if block.settings.link != blank-%}
                         <a href="{{ block.settings.link }}" class="">
                         {%- endif -%}
-                        <p class="m-0 py-3 text-center text-white h5">
+                        <p class="m-0 py-2 fw-bold text-center text-white">
                             {{ block.settings.text | escape }}
                             {%- if block.settings.link != blank -%}
                                 {% render 'icon-arrow' %}

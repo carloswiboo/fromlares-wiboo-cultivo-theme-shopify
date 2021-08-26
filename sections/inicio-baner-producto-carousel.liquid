@@ -1,7 +1,11 @@
 <div class="container">
     <div class="row d-flex align-items-center">
         <div class="col-md-6 my-5 py-5">
-            <h1>FROM OUR <br>HOME TO YOURS</h1>
+           
+            <h1>
+                {{section.settings.Text_Collection_Principal}}
+            </h1>
+
             <div class="buttonFromlares my-5">
                     SEE MORE
             </div>
@@ -11,3 +15,27 @@
         </div>
     </div>
 </div>
+
+
+{% schema %}
+{
+"name": "Colección Destacada",
+"settings": [
+{
+"type": "collection",
+"id": "Collection_Principal",
+"label": "Colección"
+},
+{
+"type": "text",
+"id": "Text_Collection_Principal",
+"label": "Texto De Colección."
+},
+{
+"type": "image_picker",
+"id": "Imagen_Producto_Coleccion_Izquierda",
+"label": "Imagen Izquierda"
+}
+]
+}
+{% endschema %}
