@@ -52,7 +52,7 @@ html {
 
 .formOpenLinks {
   position: absolute;
-  bottom: 20px;
+  bottom: 100px;
   right: 20px;
   color: #36499b !important;
   text-align: right;
@@ -66,8 +66,7 @@ html {
 
 .site-nav--active {
   list-style-type: none !important;
-  margin-top: 10px;
-  margin-bottom: 10px;
+
 }
 
 .formOpenLinks li {
@@ -132,4 +131,13 @@ h1, h2, h3, h4, h5, h6
 .facets__display
 {
   background-color: white !important;
+}
+
+.bg-top-page
+{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ padding-top: 5vh;
+ padding-bottom: 5vh;
 }

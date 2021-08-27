@@ -43,13 +43,31 @@
   }
 </style>
 
+
+
+<div class="bg-top-page" style="background-image: linear-gradient(rgba(90,103,46,0.65),rgba(90,103,46,0.65)),url({{ section.settings.Imagen_Producto_Coleccion_Izquierda | img_url: 'master' }})">
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <div class="">
+        {%- if search.performed -%}
+        <h1 class="h2 text-white">{{ 'templates.search.title' | t }}</h1>
+      {%- else -%}
+        <h1 class="h2 text-white">{{ 'general.search.search' | t }}</h1>
+      {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+ 
+</div>
+
+
+
+
 <div class="template-search spaced-section{% unless search.performed and search.results.size > 0 %} template-search--empty{% endunless %}">
-  <div class="page-width center">
-    {%- if search.performed -%}
-      <h1 class="h2">{{ 'templates.search.title' | t }}</h1>
-    {%- else -%}
-      <h1 class="h2">{{ 'general.search.search' | t }}</h1>
-    {%- endif -%}
+  <div class="page-width center container">
     <div class="template-search__search">
       <form action="{{ routes.search_url }}" method="get" role="search" class="search">
         <div class="field">
@@ -162,75 +180,71 @@
 </div>
 
 {% schema %}
+
 {
-  "name": "t:sections.main-search.name",
-  "tag": "section",
-  "class": "spaced-section",
-  "settings": [
-    {
-      "type": "header",
-      "content": "t:sections.main-search.settings.header__1.content"
-    },
-    {
-      "type": "select",
-      "id": "image_ratio",
-      "options": [
+    "name": "t:sections.main-search.name",
+    "tag": "section",
+    "class": "spaced-section",
+    "settings": [
         {
-          "value": "adapt",
-          "label": "t:sections.main-search.settings.image_ratio.options__1.label"
-        },
-        {
-          "value": "portrait",
-          "label": "t:sections.main-search.settings.image_ratio.options__2.label"
-        },
-        {
-          "value": "square",
-          "label": "t:sections.main-search.settings.image_ratio.options__3.label"
+            "type": "header",
+            "content": "t:sections.main-search.settings.header__1.content"
+        }, {
+            "type": "select",
+            "id": "image_ratio",
+            "options": [
+                {
+                    "value": "adapt",
+                    "label": "t:sections.main-search.settings.image_ratio.options__1.label"
+                }, {
+                    "value": "portrait",
+                    "label": "t:sections.main-search.settings.image_ratio.options__2.label"
+                }, {
+                    "value": "square",
+                    "label": "t:sections.main-search.settings.image_ratio.options__3.label"
+                }
+            ],
+            "default": "adapt",
+            "label": "t:sections.main-search.settings.image_ratio.label"
+        }, {
+            "type": "checkbox",
+            "id": "show_secondary_image",
+            "default": false,
+            "label": "t:sections.main-search.settings.show_secondary_image.label"
+        }, {
+            "type": "checkbox",
+            "id": "add_image_padding",
+            "default": false,
+            "label": "t:sections.main-search.settings.add_image_padding.label"
+        }, {
+            "type": "checkbox",
+            "id": "show_image_outline",
+            "default": true,
+            "label": "t:sections.main-search.settings.show_image_outline.label"
+        }, {
+            "type": "checkbox",
+            "id": "show_vendor",
+            "default": false,
+            "label": "t:sections.main-search.settings.show_vendor.label"
+        }, {
+            "type": "header",
+            "content": "t:sections.main-search.settings.header__2.content"
+        }, {
+            "type": "checkbox",
+            "id": "article_show_date",
+            "default": true,
+            "label": "t:sections.main-search.settings.article_show_date.label"
+        }, {
+            "type": "checkbox",
+            "id": "article_show_author",
+            "default": false,
+            "label": "t:sections.main-search.settings.article_show_author.label"
+        }, {
+            "type": "image_picker",
+            "id": "Imagen_Producto_Coleccion_Izquierda",
+            "label": "Imagen Izquierda"
         }
-      ],
-      "default": "adapt",
-      "label": "t:sections.main-search.settings.image_ratio.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_secondary_image",
-      "default": false,
-      "label": "t:sections.main-search.settings.show_secondary_image.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "add_image_padding",
-      "default": false,
-      "label": "t:sections.main-search.settings.add_image_padding.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_image_outline",
-      "default": true,
-      "label": "t:sections.main-search.settings.show_image_outline.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_vendor",
-      "default": false,
-      "label": "t:sections.main-search.settings.show_vendor.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.main-search.settings.header__2.content"
-    },
-    {
-      "type": "checkbox",
-      "id": "article_show_date",
-      "default": true,
-      "label": "t:sections.main-search.settings.article_show_date.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "article_show_author",
-      "default": false,
-      "label": "t:sections.main-search.settings.article_show_author.label"
-    }
-  ]
+    ]
 }
+
 {% endschema %}

@@ -34,7 +34,7 @@
                       alt="{{ section.settings.busqueda_producto.alt | default: shop.name | escape }}"
                     >
                   </a>
-
+                  <a href="/cart">
                     <img
                     src="{{ section.settings.carrito_compras | img_url: 'master' }}"
                     loading="lazy"
@@ -43,7 +43,9 @@
                     style="cursor: pointer;"
                     alt="{{ section.settings.carrito_compras.alt | default: shop.name | escape }}"
                   >
+                </a>
                   </div>
+              
             </div>
         </div>
     </div>
@@ -85,6 +87,7 @@
                     alt="{{ section.settings.busqueda_producto.alt | default: shop.name | escape }}"
                   >
                 </a>
+                <a href="/cart">
                     <img
                     src="{{ section.settings.carrito_compras | img_url: 'master' }}"
                     loading="lazy"
@@ -93,6 +96,7 @@
                     width="20"
                     alt="{{ section.settings.carrito_compras.alt | default: shop.name | escape }}"
                   >
+                </a>
                   </div>
             </div>
         </div>
