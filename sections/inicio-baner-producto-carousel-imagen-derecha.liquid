@@ -1,6 +1,6 @@
 <div class="container my-5">
     <div class="row d-flex align-items-center my-5 py-5">
-       
+
         <div class="col-md-6">
             <div class="carouselProductos" style="width: 100%;">
                 {% unless section.settings.productUnoFinal == blank %}
@@ -81,16 +81,16 @@
             </div>
         </div>
         <div class="col-md-6">
-
-            <h1>
-                {{section.settings.Text_Collection_Principal}}
-            </h1>
-
-            <div class="buttonFromlares my-5">
-                SEE MORE
-            </div>
+            <a href="{{collections[section.settings.Collection_Principal].url}}">
+                <img alt="Imagen" class="img-fluid imgProductBackground" src="{{section.settings.Imagen_Producto_Coleccion_Izquierda | img_url: "master" }}"/>
+                <div class="textosProducto my-4">
+                    {{section.settings.Text_Collection_Principal}}
+                </div>
+                <a href="{{collections[section.settings.Collection_Principal].url}}" class="buttonFromlares mb-5">
+                    SEE MORE
+                </a>
+            </a>
         </div>
-        
     </div>
 </div>
 

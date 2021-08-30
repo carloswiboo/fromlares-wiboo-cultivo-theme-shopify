@@ -2,6 +2,10 @@ html {
   font-size: 0.8rem;
 }
 
+a{
+  text-decoration: none !important; 
+}
+
 .animationRotate {
   -webkit-animation: rotation 2s infinite linear;
   cursor: pointer !important;
@@ -146,4 +150,10 @@ h1, h2, h3, h4, h5, h6
 {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.textosProducto
+{
+  color: #36499B !important;
+  text-decoration: none !important;
 }
