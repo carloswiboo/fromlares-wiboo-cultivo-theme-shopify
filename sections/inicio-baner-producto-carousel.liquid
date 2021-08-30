@@ -1,41 +1,140 @@
 <div class="container">
-    <div class="row d-flex align-items-center">
-        <div class="col-md-6 my-5 py-5">
-           
+    <div class="row d-flex align-items-center my-5">
+        <div class="col-md-6">
+
             <h1>
                 {{section.settings.Text_Collection_Principal}}
             </h1>
 
             <div class="buttonFromlares my-5">
-                    SEE MORE
+                SEE MORE
             </div>
         </div>
         <div class="col-md-6">
-            ádsfaksdfjlñkj
+            <div class="carouselProductos" style="width: 100%;">
+                {% unless section.settings.productUnoFinal == blank %}
+                    {% assign productUno = all_products[section.settings.productUnoFinal] %}
+                    {% if productUno %}
+                        <div class="productContainer">
+                            <img alt="Imagen" class="img-fluid imgProductBackground" src="{{productUno.featured_image | img_url: "master" }}"/>
+                            <div class="textosProducto">
+                                <h6 class="m-0 mt-3">
+                                    {% for collection in productUno.collections %}
+                                        {{ collection.title }}
+                                    {% endfor %}
+                                </h6>
+                                <h5 class="m-0">
+                                    {{ productUno.title }}
+                                </h5>
+                                <h5 class="m-0">
+                                    $
+                                    {{ productUno.price }}
+                                </h5>
+                            </div>
+                        </div>
+                    {% else %}
+                        No product, or invalid product, selected.
+                    {% endif %}
+                {% endunless %}
+
+                {% unless section.settings.productDosFinal == blank %}
+                    {% assign productDos = all_products[section.settings.productDosFinal] %}
+                    {% if productDos %}
+                        <div class="productContainer">
+                            <img alt="Imagen" class="img-fluid imgProductBackground" src="{{productDos.featured_image | img_url: "master" }}"/>
+                            <div class="textosProducto">
+                                <h6 class="m-0 mt-3">
+                                    {% for collection in productDos.collections %}
+                                        {{ collection.title }}
+                                    {% endfor %}
+                                </h6>
+                                <h5 class="m-0">
+                                    {{ productDos.title }}
+                                </h5>
+                                <h5 class="m-0">
+                                    $
+                                    {{ productDos.price }}
+                                </h5>
+                            </div>
+                        </div>
+                    {% else %}
+                        No product, or invalid product, selected.
+                    {% endif %}
+                {% endunless %}
+
+
+                {% unless section.settings.productTresFinal == blank %}
+                    {% assign productTres = all_products[section.settings.productTresFinal] %}
+                    {% if productTres %}
+                        <div class="productContainer">
+                            <img alt="Imagen" class="img-fluid imgProductBackground" src="{{productTres.featured_image | img_url: "master" }}"/>
+                            <div class="textosProducto">
+                                <h6 class="m-0 mt-3">
+                                    {% for collection in productTres.collections %}
+                                        {{ collection.title }}
+                                    {% endfor %}
+                                </h6>
+                                <h5 class="m-0">
+                                    {{ productTres.title }}
+                                </h5>
+                                <h5 class="m-0">
+                                    $
+                                    {{ productTres.price }}
+                                </h5>
+                            </div>
+                        </div>
+                    {% else %}
+                        No product, or invalid product, selected.
+                    {% endif %}
+                {% endunless %}
+            </div>
         </div>
     </div>
 </div>
 
 
+<script>
+    $(document).ready(function(){
+      $('.carouselProductos').slick({
+        slidesToShow: 2,
+        dots:true,
+        arrows: true
+        });
+    })
+</script>
+
+
 {% schema %}
+
 {
-"name": "Colección Destacada",
-"settings": [
-{
-"type": "collection",
-"id": "Collection_Principal",
-"label": "Colección"
-},
-{
-"type": "text",
-"id": "Text_Collection_Principal",
-"label": "Texto De Colección."
-},
-{
-"type": "image_picker",
-"id": "Imagen_Producto_Coleccion_Izquierda",
-"label": "Imagen Izquierda"
+    "name": "Colección Destacada",
+    "settings": [
+        {
+            "type": "collection",
+            "id": "Collection_Principal",
+            "label": "Colección"
+        }, {
+            "type": "text",
+            "id": "Text_Collection_Principal",
+            "label": "Texto De Colección."
+        }, {
+            "type": "image_picker",
+            "id": "Imagen_Producto_Coleccion_Izquierda",
+            "label": "Imagen Izquierda"
+        }, {
+            "type": "product",
+            "id": "productUnoFinal",
+            "label": "Product"
+        }, {
+            "type": "product",
+            "id": "productDosFinal",
+            "label": "ProductDos"
+        }, {
+            "type": "product",
+            "id": "productTresFinal",
+            "label": "ProductDos"
+        }
+    ]
 }
-]
-}
+
 {% endschema %}
