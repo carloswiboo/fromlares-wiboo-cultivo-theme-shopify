@@ -99,6 +99,16 @@
       "inicio-baner-producto-carousel": {
         "type": "inicio-baner-producto-carousel",
         "settings": {
+          "Collection_Principal": "",
+          "Text_Collection_Principal": "FROM OUR <br> HOME TO YOURS",
+          "productUnoFinal": "producto",
+          "productDosFinal": "producto-2",
+          "productTresFinal": "producto-3"
+        }
+      },
+      "instagram-feed": {
+        "type": "instagram-feed",
+        "settings": {
         }
       }
     },
