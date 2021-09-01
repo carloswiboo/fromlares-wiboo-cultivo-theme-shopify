@@ -86,11 +86,20 @@
               "title": "",
               "link": ""
             }
+          },
+          "ad645080-fb97-4e46-b8c5-07394779f9f0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/red-curtain-texture.jpg",
+              "title": "",
+              "link": ""
+            }
           }
         },
         "block_order": [
           "0e8aa514-512f-4ae2-9753-e26a3853a25b",
-          "b014cec1-225d-403c-bc4c-c41b43697580"
+          "b014cec1-225d-403c-bc4c-c41b43697580",
+          "ad645080-fb97-4e46-b8c5-07394779f9f0"
         ],
         "settings": {
           "text_size": "medium"
