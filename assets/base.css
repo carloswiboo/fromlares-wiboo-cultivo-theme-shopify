@@ -1676,7 +1676,7 @@ input[type='checkbox'] {
 }
 
 .cart-count-bubble {
-  position: absolute;
+ 
   background-color: rgb(var(--color-base-accent-1));
   color: rgb(var(--color-base-solid-button-labels));
   height: 1.7rem;
@@ -1685,10 +1685,10 @@ input[type='checkbox'] {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.9rem;
+ 
   bottom: 0.8rem;
   left: 2.2rem;
-  line-height: 1.1;
+  font-weight: bold;
 }
 
 /* section-announcement-bar */

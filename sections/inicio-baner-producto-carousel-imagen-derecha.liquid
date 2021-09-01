@@ -1,8 +1,7 @@
 <div class="container my-5">
     <div class="row d-flex align-items-center my-5 py-5">
-
         <div class="col-md-6">
-            <div class="carouselProductos" style="width: 100%;">
+            <div class="carouselProductos2" style="width: 100%;">
                 {% unless section.settings.productUnoFinal == blank %}
                     {% assign productUno = all_products[section.settings.productUnoFinal] %}
                     {% if productUno %}
@@ -97,7 +96,7 @@
 
 <script>
     $(document).ready(function(){
-      $('.carouselProductos').slick({
+      $('.carouselProductos2').slick({
         slidesToShow: 2,
         dots:true,
         arrows: true
