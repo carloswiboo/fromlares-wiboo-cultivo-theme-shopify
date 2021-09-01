@@ -75,7 +75,7 @@
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/Recurso_1-8.png",
-              "title": "Image slide",
+              "title": "",
               "link": ""
             }
           },
@@ -83,7 +83,7 @@
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/woman-infront-of-tree-with-berries.jpeg",
-              "title": "Image slide",
+              "title": "",
               "link": ""
             }
           }
