@@ -2,6 +2,7 @@
   "current": {
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
+    "favicon": "shopify:\/\/shop_images\/Recurso_1_3x_7ced14a9-b96c-4dc3-a92f-cebcc9552c83.png",
     "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#121212",
     "colors_accent_2": "#334FB4",
@@ -86,11 +87,20 @@
               "title": "",
               "link": ""
             }
+          },
+          "ad645080-fb97-4e46-b8c5-07394779f9f0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/red-curtain-texture.jpg",
+              "title": "",
+              "link": ""
+            }
           }
         },
         "block_order": [
           "0e8aa514-512f-4ae2-9753-e26a3853a25b",
-          "b014cec1-225d-403c-bc4c-c41b43697580"
+          "b014cec1-225d-403c-bc4c-c41b43697580",
+          "ad645080-fb97-4e46-b8c5-07394779f9f0"
         ],
         "settings": {
           "text_size": "medium"
