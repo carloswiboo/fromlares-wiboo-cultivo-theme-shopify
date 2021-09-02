@@ -125,7 +125,7 @@
       "inicio-baner-producto-carousel-imagen-derecha": {
         "type": "inicio-baner-producto-carousel-imagen-derecha",
         "settings": {
-          "Collection_Principal": "",
+          "Collection_Principal": "chromophobia",
           "Text_Collection_Principal": "",
           "Imagen_Producto_Coleccion_Izquierda": "shopify:\/\/shop_images\/Recurso_2_3x_94c9d93b-8262-4252-a475-850bb0b06cdd.png",
           "productUnoFinal": "producto-3",
