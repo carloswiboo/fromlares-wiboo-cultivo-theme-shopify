@@ -17,8 +17,7 @@
                                     {{ productUno.title }}
                                 </h5>
                                 <h5 class="m-0">
-                                    $
-                                    {{ productUno.price }}
+                                    {{ productUno.price | money_with_currency  }}
                                 </h5>
                             </div>
                         </a>
@@ -42,8 +41,7 @@
                                     {{ productDos.title }}
                                 </h5>
                                 <h5 class="m-0">
-                                    $
-                                    {{ productDos.price }}
+                                    {{ productDos.price | money_with_currency  }}
                                 </h5>
                             </div>
                         </a>
@@ -68,8 +66,8 @@
                                     {{ productTres.title }}
                                 </h5>
                                 <h5 class="m-0">
-                                    $
-                                    {{ productTres.price }}
+                                   
+                                    {{ productTres.price | money_with_currency  }}
                                 </h5>
                             </div>
                         </a>

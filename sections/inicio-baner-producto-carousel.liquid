@@ -27,9 +27,10 @@
                                     {{ productUno.title }}
                                 </h5>
                                 <h5 class="m-0">
-                                    $
-                                    {{ productUno.price }}
+                                    {{ productUno.price | money_with_currency  }}
                                 </h5>
+
+                                <img src="{{ 'agregarcarrito.png' | asset_url }}" height="40" />
                             </div>
                         </a>
                     {% else %}
@@ -52,8 +53,7 @@
                                     {{ productDos.title }}
                                 </h5>
                                 <h5 class="m-0">
-                                    $
-                                    {{ productDos.price }}
+                                    {{ productDos.price | money_with_currency  }}
                                 </h5>
                             </div>
                         </a>
@@ -66,7 +66,7 @@
                 {% unless section.settings.productTresFinal == blank %}
                     {% assign productTres = all_products[section.settings.productTresFinal] %}
                     {% if productTres %}
-                    <a href="{{ productDos.url }}" class="productContainer">
+                    <a href="{{ productTres.url }}" class="productContainer">
                             <img alt="Imagen" class="img-fluid imgProductBackground" src="{{productTres.featured_image | img_url: "master" }}"/>
                             <div class="textosProducto">
                                 <h6 class="m-0 mt-3">
@@ -78,8 +78,7 @@
                                     {{ productTres.title }}
                                 </h5>
                                 <h5 class="m-0">
-                                    $
-                                    {{ productTres.price }}
+                                    {{ productTres.price | money_with_currency  }}
                                 </h5>
                             </div>
                         </a>
