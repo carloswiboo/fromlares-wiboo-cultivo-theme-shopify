@@ -136,7 +136,7 @@
         "type": "header",
         "settings": {
           "logo": "shopify:\/\/shop_images\/Recurso_1.png",
-          "logo_width": 160,
+          "logo_width": 190,
           "logo_position": "top-center",
           "menu": "",
           "show_line_separator": true,
