@@ -6,21 +6,24 @@
                     {% assign productUno = all_products[section.settings.productUnoFinal] %}
                     {% if productUno %}
                     <a href="{{ productUno.url }}" class="productContainer">
-                            <img alt="Imagen" class="img-fluid imgProductBackground" src="{{productUno.featured_image | img_url: "master" }}"/>
-                            <div class="textosProducto">
-                                <h6 class="m-0 mt-3">
-                                    {% for collection in productUno.collections %}
-                                        {{ collection.title }}
-                                    {% endfor %}
-                                </h6>
-                                <h5 class="m-0">
+                        <img alt="Imagen" class="img-fluid imgProductBackground" src="{{productUno.featured_image | img_url: "master" }}"/>
+                        <h6 class="m-0 my-3" style="font-weight: 600">
+                            {% for collection in productUno.collections %}
+                                {{ collection.title }}
+                            {% endfor %}
+                        </h6>
+                        <div class="textosProducto d-flex justify-content-between d-flex align-items-center">
+                            <span>
+                                <h5 class="m-0" style="font-weight: normal;">
                                     {{ productUno.title }}
                                 </h5>
-                                <h5 class="m-0">
+                                <h5 class="m-0" style="font-weight: normal;">
                                     {{ productUno.price | money_with_currency  }}
                                 </h5>
-                            </div>
-                        </a>
+                            </span>
+                            <img src="https://cdn.shopify.com/s/files/1/0588/1688/9029/files/agregarAlCarrito.png?v=1630590483" height="40" />
+                        </div>
+                    </a>
                     {% else %}
                         No product, or invalid product, selected.
                     {% endif %}
@@ -30,21 +33,24 @@
                     {% assign productDos = all_products[section.settings.productDosFinal] %}
                     {% if productDos %}
                     <a href="{{ productDos.url }}" class="productContainer">
-                            <img alt="Imagen" class="img-fluid imgProductBackground" src="{{productDos.featured_image | img_url: "master" }}"/>
-                            <div class="textosProducto">
-                                <h6 class="m-0 mt-3">
-                                    {% for collection in productDos.collections %}
-                                        {{ collection.title }}
-                                    {% endfor %}
-                                </h6>
-                                <h5 class="m-0">
+                        <img alt="Imagen" class="img-fluid imgProductBackground" src="{{productDos.featured_image | img_url: "master" }}"/>
+                        <h6 class="m-0 my-3" style="font-weight: 600">
+                            {% for collection in productDos.collections %}
+                                {{ collection.title }}
+                            {% endfor %}
+                        </h6>
+                        <div class="textosProducto d-flex justify-content-between d-flex align-items-center">
+                            <span>
+                                <h5 class="m-0" style="font-weight: normal;">
                                     {{ productDos.title }}
                                 </h5>
-                                <h5 class="m-0">
+                                <h5 class="m-0" style="font-weight: normal;">
                                     {{ productDos.price | money_with_currency  }}
                                 </h5>
-                            </div>
-                        </a>
+                            </span>
+                            <img src="https://cdn.shopify.com/s/files/1/0588/1688/9029/files/agregarAlCarrito.png?v=1630590483" height="40" />
+                        </div>
+                    </a>
                     {% else %}
                         No product, or invalid product, selected.
                     {% endif %}
@@ -54,23 +60,25 @@
                 {% unless section.settings.productTresFinal == blank %}
                     {% assign productTres = all_products[section.settings.productTresFinal] %}
                     {% if productTres %}
-                    <a href="{{ productDos.url }}" class="productContainer">
-                            <img alt="Imagen" class="img-fluid imgProductBackground" src="{{productTres.featured_image | img_url: "master" }}"/>
-                            <div class="textosProducto">
-                                <h6 class="m-0 mt-3">
-                                    {% for collection in productTres.collections %}
-                                        {{ collection.title }}
-                                    {% endfor %}
-                                </h6>
-                                <h5 class="m-0">
+                    <a href="{{ productTres.url }}" class="productContainer">
+                        <img alt="Imagen" class="img-fluid imgProductBackground" src="{{productTres.featured_image | img_url: "master" }}"/>
+                        <h6 class="m-0 my-3" style="font-weight: 600">
+                            {% for collection in productTres.collections %}
+                                {{ collection.title }}
+                            {% endfor %}
+                        </h6>
+                        <div class="textosProducto d-flex justify-content-between d-flex align-items-center">
+                            <span>
+                                <h5 class="m-0" style="font-weight: normal;">
                                     {{ productTres.title }}
                                 </h5>
-                                <h5 class="m-0">
-                                   
+                                <h5 class="m-0" style="font-weight: normal;">
                                     {{ productTres.price | money_with_currency  }}
                                 </h5>
-                            </div>
-                        </a>
+                            </span>
+                            <img src="https://cdn.shopify.com/s/files/1/0588/1688/9029/files/agregarAlCarrito.png?v=1630590483" height="40" />
+                        </div>
+                    </a>
                     {% else %}
                         No product, or invalid product, selected.
                     {% endif %}
