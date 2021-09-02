@@ -1,5 +1,12 @@
-<div class="formOpen animate__animated animate__fadeInDown" style="display: none;">
+<div class="formOpen animate__animated animate__fadeInDown animate__backOutUp" style="display: none;">
     <div class="container-fluid my-4 p-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="openCloseMenu" src="//cdn.shopify.com/s/files/1/0588/1688/9029/files/Recurso_1_3x_7ced14a9-b96c-4dc3-a92f-cebcc9552c83_32x32.png?v=1627424814" />
+                </div>
+            </div>
+        </div>
         <div class="formOpenLinks">
             {% for link in linklists.abierto.links %}
                 {% assign child_list_handle = link.title | handleize %}
@@ -31,8 +38,8 @@
 <script>
     $(document).ready(function () {
 
-        $(".header__search").on("click", function () {
-            $(".formOpen").toggle();
+        $(".openCloseMenu").on("click", function () {
+            $(".formOpen").fadeToggle();
         })
     })
 </script>

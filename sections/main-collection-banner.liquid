@@ -1,6 +1,7 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 
 
+{% if collection.image.src %}
 <div class="container-fluid g-0">
     <div class="row g-0">
         <div class="col-md-3 text-center sticky-top">
@@ -22,6 +23,9 @@
         </div>
     </div>
 </div>
+{% endif %}
+
+
 
 
 {% schema %}

@@ -1685,10 +1685,10 @@ input[type='checkbox'] {
   display: flex;
   justify-content: center;
   align-items: center;
- 
   bottom: 0.8rem;
   left: 2.2rem;
   font-weight: bold;
+  font-size: 13px;
 }
 
 /* section-announcement-bar */
@@ -1768,8 +1768,7 @@ input[type='checkbox'] {
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   background-color: white;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+ 
 }
 
 @media screen and (min-width: 990px) {
