@@ -27,7 +27,7 @@ a{
 }
 
 .announcement-bar {
-  background: radial-gradient(#d89fe0, #e0cde6);
+  background: linear-gradient(270deg, #d89fe0, #e0cde6);
   color: white;
 }
 
