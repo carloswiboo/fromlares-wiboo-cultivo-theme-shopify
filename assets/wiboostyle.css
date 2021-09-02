@@ -258,3 +258,15 @@ h1, h2, h3, h4, h5, h6
  text-decoration: none;
 }
 
+.tinyMessageMenu
+{
+  font-size: 10px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+
+.site-nav__link span
+{
+  font-size: 10px;
+}
