@@ -131,6 +131,22 @@
           "productDosFinal": "producto-2",
           "productTresFinal": "producto"
         }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/Recurso_1.png",
+          "logo_width": 190,
+          "logo_position": "top-center",
+          "menu": "",
+          "show_line_separator": true,
+          "enable_sticky_header": true
+        }
+      },
+      "menu-open": {
+        "type": "menu-open",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
