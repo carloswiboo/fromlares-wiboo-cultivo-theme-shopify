@@ -148,6 +148,13 @@
         "type": "menu-open",
         "settings": {
         }
+      },
+      "image-banner-full": {
+        "type": "image-banner-full",
+        "settings": {
+          "ImagenFullLoading": "shopify:\/\/shop_images\/Recurso_1-8.png",
+          "ImagenFullLoaded": "shopify:\/\/shop_images\/woman-infront-of-tree-with-berries.jpeg"
+        }
       }
     },
     "content_for_index": [
