@@ -260,13 +260,21 @@ h1, h2, h3, h4, h5, h6
 
 .tinyMessageMenu
 {
-  font-size: 10px;
-  font-weight: lighter;
+  font-size: 14px;
   font-style: italic;
 }
 
-
-.site-nav__link span
+.btn-secondary
 {
-  font-size: 10px;
+  background-color: #EFEFEF !important;
+  border: none;
+  color: #36499B; 
 }
+
+.btn-primary
+{
+  background-color: #36499B !important;
+  border: none;
+  color: #EFEFEF; 
+}
+

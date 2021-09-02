@@ -1,5 +1,5 @@
 <cart-notification>
-  <div class="cart-notification-wrapper page-width">
+  <div class="cart-notification-wrapper container-fluid">
     <div id="cart-notification" class="cart-notification focus-inset" aria-modal="true" aria-label="{{ 'general.cart.item_added' | t }}" role="dialog" tabindex="-1">
       <div class="cart-notification__header">
         <h2 class="cart-notification__heading caption-large">{%- render 'icon-checkmark' -%} {{ 'general.cart.item_added' | t }}</h2>
@@ -8,18 +8,32 @@
         </button>
       </div>
       <div id="cart-notification-product" class="cart-notification-product"></div>
-      <div class="cart-notification__links">
-        <a href="{{ routes.cart_url }}" id="cart-notification-button" class="button button--secondary button--full-width"></a>
-        <form action="{{ routes.cart_url }}" method="post" id="cart">
-          <button class="button button--primary button--full-width" name="checkout" form="cart">{{ 'sections.cart.checkout' | t }}</button>
-        </form>
-        <button type="button" class="link button-label">{{ 'general.continue_shopping' | t }}</button>
+    
+      <div class="d-flex justify-content-center">
+       
       </div>
+
+      <div class="d-grid gap-2 col-6 mx-auto mb-2">
+        <a href="{{ routes.cart_url }}" id="cart-notification-button" class="btn btn-primary"></a>
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <form action="{{ routes.cart_url }}" method="post" id="cart">
+          <button class="btn btn-secondary w-100" name="checkout" form="cart">{{ 'sections.cart.checkout' | t }}</button>
+        </form>
+        <button type="button" class="btn btn-secondary">{{ 'general.continue_shopping' | t }}</button>
+      </div>
+
+
+      
+
     </div>
   </div>
 </cart-notification>
 {% style %}
-  .cart-notification {
-     display: none;
-  }
+
+.cart-notification {
+    display: none;
+    z-index: 600000 !important;
+}
+
 {% endstyle %}
