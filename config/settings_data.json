@@ -111,6 +111,7 @@
         "settings": {
           "Collection_Principal": "",
           "Text_Collection_Principal": "FROM OUR <br> HOME TO YOURS",
+          "Text_Description_": "Aqui ponemos el texto de refuerzo",
           "productUnoFinal": "producto",
           "productDosFinal": "producto-2",
           "productTresFinal": "producto-3"
