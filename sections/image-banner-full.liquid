@@ -1,4 +1,14 @@
-<img class="imgFullWelcome animate__animated animate__fadeIn" src="{{ section.settings.ImagenFull | img_url: 'master' }}"/>
+<img class="imgFullWelcome ocultarFrame animate__animated animate__fadeIn" src="{{ section.settings.ImagenFullLoading | img_url: 'master' }}"/>
+<img class="imgFullWelcomeDos" src="{{ section.settings.ImagenFullLoaded | img_url: 'master' }}"/>
+
+<script>
+   $(document).ready(function(){
+    setTimeout(function(){
+ 	$(".ocultarFrame").hide();
+}, 2000);//wait 2 seconds
+   });
+</script>
+
 {% schema %}
 
 {
@@ -6,8 +16,13 @@
     "settings": [
         {
             "type": "image_picker",
-            "id": "ImagenFull",
-            "label": "Imagen De Fondo"
+            "id": "ImagenFullLoading",
+            "label": "Imagen De Fondo Cargando"
+        },
+        {
+            "type": "image_picker",
+            "id": "ImagenFullLoaded",
+            "label": "Imagen De Fondo Cargado"
         }
     ]
 }
