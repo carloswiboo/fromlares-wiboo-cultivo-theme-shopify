@@ -4,7 +4,8 @@
 <script>
    $(document).ready(function(){
     setTimeout(function(){
- 	$(".ocultarFrame").fadeOut();
+ 	$(".ocultarFrame").removeClass( "animate__fadeIn" );
+ 	$(".ocultarFrame").addClass( "animate__fadeOut" );
 }, 2000);//wait 2 seconds
    });
 </script>
