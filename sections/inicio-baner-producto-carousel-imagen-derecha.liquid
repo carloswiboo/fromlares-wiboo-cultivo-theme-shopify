@@ -5,7 +5,7 @@
                 {% unless section.settings.productUnoFinal == blank %}
                     {% assign productUno = all_products[section.settings.productUnoFinal] %}
                     {% if productUno %}
-                        <div class="productContainer">
+                    <a href="{{ productUno.url }}" class="productContainer">
                             <img alt="Imagen" class="img-fluid imgProductBackground" src="{{productUno.featured_image | img_url: "master" }}"/>
                             <div class="textosProducto">
                                 <h6 class="m-0 mt-3">
@@ -21,7 +21,7 @@
                                     {{ productUno.price }}
                                 </h5>
                             </div>
-                        </div>
+                        </a>
                     {% else %}
                         No product, or invalid product, selected.
                     {% endif %}
@@ -30,7 +30,7 @@
                 {% unless section.settings.productDosFinal == blank %}
                     {% assign productDos = all_products[section.settings.productDosFinal] %}
                     {% if productDos %}
-                        <div class="productContainer">
+                    <a href="{{ productDos.url }}" class="productContainer">
                             <img alt="Imagen" class="img-fluid imgProductBackground" src="{{productDos.featured_image | img_url: "master" }}"/>
                             <div class="textosProducto">
                                 <h6 class="m-0 mt-3">
@@ -46,7 +46,7 @@
                                     {{ productDos.price }}
                                 </h5>
                             </div>
-                        </div>
+                        </a>
                     {% else %}
                         No product, or invalid product, selected.
                     {% endif %}
@@ -56,7 +56,7 @@
                 {% unless section.settings.productTresFinal == blank %}
                     {% assign productTres = all_products[section.settings.productTresFinal] %}
                     {% if productTres %}
-                        <div class="productContainer">
+                    <a href="{{ productDos.url }}" class="productContainer">
                             <img alt="Imagen" class="img-fluid imgProductBackground" src="{{productTres.featured_image | img_url: "master" }}"/>
                             <div class="textosProducto">
                                 <h6 class="m-0 mt-3">
@@ -72,7 +72,7 @@
                                     {{ productTres.price }}
                                 </h5>
                             </div>
-                        </div>
+                        </a>
                     {% else %}
                         No product, or invalid product, selected.
                     {% endif %}
