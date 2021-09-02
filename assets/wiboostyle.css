@@ -240,3 +240,21 @@ h1, h2, h3, h4, h5, h6
 {
   font-size: initial  !important;
 }
+
+
+.grayBelt
+{
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px;
+  color: #36499b;
+  font-weight: bold;
+  width: 80%;
+}
+
+.grayBelt a
+{
+   color: #36499b !important;
+ text-decoration: none;
+}
+
