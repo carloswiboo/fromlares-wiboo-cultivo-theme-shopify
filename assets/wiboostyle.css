@@ -278,3 +278,23 @@ h1, h2, h3, h4, h5, h6
   color: #EFEFEF; 
 }
 
+.slider-buttons--overlay .slider-counter
+{
+  color: white !important;
+}
+
+.slider-button
+{
+  color: white !important
+}
+
+
+
+@media (max-width: 575.98px) { 
+  .productWibooCultivo
+  {
+    flex-direction: column-reverse;
+  }
+
+}
+
