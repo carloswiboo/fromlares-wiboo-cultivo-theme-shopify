@@ -1,0 +1,15 @@
+<img class="imgFullWelcome animate__animated animate__fadeIn" src="{{ section.settings.ImagenFull | img_url: 'master' }}"/>
+{% schema %}
+
+{
+    "name": "Imagen Principal",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "ImagenFull",
+            "label": "Imagen De Fondo"
+        }
+    ]
+}
+
+{% endschema %}
