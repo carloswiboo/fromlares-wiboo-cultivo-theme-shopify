@@ -163,3 +163,31 @@ h1, h2, h3, h4, h5, h6
   color: #36499B !important;
   text-decoration: none !important;
 }
+
+#cart-notification
+{
+  background-color: white !important;
+}
+
+.product-form__submit
+{
+  background-color: #EFEFEF !important;
+  color: #36499B !important;
+  border-radius: 10px;
+}
+.select
+{
+  width: 100% !important;
+  max-width: 100%;;
+}
+.select__select
+{
+  background-color: #EFEFEF !important;
+  color: #36499B !important;
+  border-radius: 10px;
+}
+
+.product-form__input .select
+{
+  max-width: 100% !important;
+}
