@@ -288,7 +288,19 @@ h1, h2, h3, h4, h5, h6
   color: white !important
 }
 
+.imageDerechaBannerCompleto
+{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 
+}
+
+.imgCentralBannerDerechoCompleto
+{
+  width: 50%;
+  margin: 0 auto;
+}
 
 @media (max-width: 575.98px) { 
   .productWibooCultivo
