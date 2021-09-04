@@ -176,7 +176,7 @@
       "title-left-content-right": {
         "type": "title-left-content-right",
         "settings": {
-          "tituloThisIsFromlares": "",
+          "tituloThisIsFromlares": "THIS IS <br> FROMLARES",
           "descripcionThisIsFromlares": ""
         }
       }
