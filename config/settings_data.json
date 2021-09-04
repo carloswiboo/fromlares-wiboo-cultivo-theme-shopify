@@ -165,6 +165,20 @@
           "imagenDerechaPrincipal": "shopify:\/\/shop_images\/Recurso_2_3x_94c9d93b-8262-4252-a475-850bb0b06cdd.png",
           "button_link": "shopify:\/\/collections\/chromophobia"
         }
+      },
+      "index-image-about-us-text": {
+        "type": "index-image-about-us-text",
+        "settings": {
+          "imageFullPrincipal": "shopify:\/\/shop_images\/Inicio_Imagen_From_3x_6bc3724c-8fbb-453d-81f6-e921305bcc07.png",
+          "textoFullPrincipal": "We firmly believe that a tiny bit of us and our stories are woven into everything we make and hope we can bring a piece of that joy and love into every home we reach. From the deepest of our souls to yours."
+        }
+      },
+      "title-left-content-right": {
+        "type": "title-left-content-right",
+        "settings": {
+          "tituloThisIsFromlares": "",
+          "descripcionThisIsFromlares": ""
+        }
       }
     },
     "content_for_index": [
