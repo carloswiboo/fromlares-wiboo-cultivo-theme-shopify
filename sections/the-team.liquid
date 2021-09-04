@@ -1,0 +1,44 @@
+<div class="about-us-index-image">
+    <div class="container">
+        <div class="row rows-cols-md-3">
+            {% for block in section.blocks %}
+              <img src="{{ block.settings.image | img_url: 'master' }}"  alt="NombrePersona" style="width: 100%;" />
+              <p>{{block.settings.nombreFromlares}}</p>
+              <p>{{block.settings.nombrePersona}}</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+
+{
+    "name": "Team",
+    "tag": "section",
+    "class": "slideshow",
+    "blocks": [
+        {
+            "name": "People",
+            "type": "slide",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                }, {
+                    "type": "textarea",
+                    "id": "nombreFromlares",
+                    "label": "Texto de Empresa"
+                },
+                {
+                    "type": "textarea",
+                    "id": "nombrePersona",
+                    "label": "Nombre de Persona"
+                }
+            ]
+        }
+    ]
+}
+
+{% endschema %}
