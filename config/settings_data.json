@@ -190,10 +190,19 @@
               "nombreFromlares": "FROMLARES TEAM",
               "nombrePersona": "Name Surname"
             }
+          },
+          "37d6f45a-eeb9-44d8-a498-f6e91d487751": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Recurso_2_3x_94c9d93b-8262-4252-a475-850bb0b06cdd.png",
+              "nombreFromlares": "FROMLARES TEAM",
+              "nombrePersona": "Name Surname"
+            }
           }
         },
         "block_order": [
-          "1ee6f90d-1893-47b5-a19d-3dbc460bfa95"
+          "1ee6f90d-1893-47b5-a19d-3dbc460bfa95",
+          "37d6f45a-eeb9-44d8-a498-f6e91d487751"
         ],
         "settings": {
         }
