@@ -1,15 +1,14 @@
 html {
   font-size: 0.8rem;
-  color: #36499B !important;
+  color: #36499b !important;
 }
 
-body
-{
-  color: #36499B !important;
+body {
+  color: #36499b !important;
 }
 
-a{
-  text-decoration: none !important; 
+a {
+  text-decoration: none !important;
 }
 
 .animationRotate {
@@ -76,7 +75,6 @@ a{
 
 .site-nav--active {
   list-style-type: none !important;
-
 }
 
 .formOpenLinks li {
@@ -84,7 +82,7 @@ a{
 }
 
 .carouselduqueprincipal {
-  width: 100%;  
+  width: 100%;
   text-align: center;
 }
 .carouselduqueprincipal div {
@@ -111,94 +109,83 @@ a{
   display: inline-block;
 }
 
-
-footer
-{
-  color: #36499B !important;
+footer {
+  color: #36499b !important;
   margin-top: 7vh;
   margin-bottom: 7vh;
 }
-footer a
-{
-  color: #36499B !important;
+footer a {
+  color: #36499b !important;
   text-decoration: none;
   margin-left: 5px;
   margin-right: 5px;
 }
 
-.instagramContainer
-{
-  background-color: #E0C7E6;
+.instagramContainer {
+  background-color: #e0c7e6;
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
 
-h1, h2, h3, h4, h5, h6
-{
-  color: #36499B !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #36499b !important;
 }
 
-.facets__display
-{
+.facets__display {
   background-color: white !important;
 }
 
-.bg-top-page
-{
+.bg-top-page {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
- padding-top: 5vh;
- padding-bottom: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
-.productContainer
-{
+.productContainer {
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.textosProducto
-{
-  color: #36499B !important;
+.textosProducto {
+  color: #36499b !important;
   text-decoration: none !important;
 }
 
-#cart-notification
-{
+#cart-notification {
   background-color: white !important;
 }
 
-.product-form__submit
-{
-  background-color: #EFEFEF !important;
-  color: #36499B !important;
+.product-form__submit {
+  background-color: #efefef !important;
+  color: #36499b !important;
   border-radius: 10px;
 }
-.select
-{
+.select {
   width: 100% !important;
-  max-width: 100%;;
+  max-width: 100%;
 }
-.select__select
-{
-  background-color: #EFEFEF !important;
-  color: #36499B !important;
+.select__select {
+  background-color: #efefef !important;
+  color: #36499b !important;
   border-radius: 10px;
 }
 
-.product-form__input .select
-{
+.product-form__input .select {
   max-width: 100% !important;
 }
 
-.openCloseMenu
-{
+.openCloseMenu {
   cursor: pointer;
 }
 
-.imgFullWelcome
-{
+.imgFullWelcome {
   width: 100%;
   position: fixed;
   top: 0;
@@ -207,43 +194,36 @@ h1, h2, h3, h4, h5, h6
   right: 0;
   z-index: 500000;
 }
-.imgFullWelcomeDos
-{
+.imgFullWelcomeDos {
   width: 100%;
   position: relative;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-
 }
 
-.collection-filters__sort
-{
+.collection-filters__sort {
   padding-top: 4px !important;
   padding-bottom: 4px !important;
   padding-left: 10px !important;
   padding-right: 10px !important;
 }
 
-.collection-filters__sort + .icon-caret
-{
+.collection-filters__sort + .icon-caret {
   right: 10px !important;
 }
 
-.mobile-facets
-{
+.mobile-facets {
   background-color: white;
 }
 
-.field__label, .customer .field label
-{
-  font-size: initial  !important;
+.field__label,
+.customer .field label {
+  font-size: initial !important;
 }
 
-
-.grayBelt
-{
+.grayBelt {
   background-color: #f0f0f0;
   border-radius: 10px;
   padding: 10px;
@@ -252,74 +232,59 @@ h1, h2, h3, h4, h5, h6
   width: 80%;
 }
 
-.grayBelt a
-{
-   color: #36499b !important;
- text-decoration: none;
+.grayBelt a {
+  color: #36499b !important;
+  text-decoration: none;
 }
 
-.tinyMessageMenu
-{
+.tinyMessageMenu {
   font-size: 14px;
   font-style: italic;
 }
 
-.btn-secondary
-{
-  background-color: #EFEFEF !important;
+.btn-secondary {
+  background-color: #efefef !important;
   border: none;
-  color: #36499B; 
+  color: #36499b;
 }
 
-.btn-primary
-{
-  background-color: #36499B !important;
+.btn-primary {
+  background-color: #36499b !important;
   border: none;
-  color: #EFEFEF; 
+  color: #efefef;
 }
 
-.slider-buttons--overlay .slider-counter
-{
+.slider-buttons--overlay .slider-counter {
   color: white !important;
 }
 
-.slider-button
-{
-  color: white !important
+.slider-button {
+  color: white !important;
 }
 
-.imageDerechaBannerCompleto
-{
+.imageDerechaBannerCompleto {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-
 }
 
-.imgCentralBannerDerechoCompleto
-{
+.imgCentralBannerDerechoCompleto {
   width: 50%;
   margin: 0 auto;
 }
 
-@media (max-width: 575.98px) { 
-  .productWibooCultivo
-  {
+@media (max-width: 575.98px) {
+  .productWibooCultivo {
     flex-direction: column-reverse;
   }
-
 }
 
-
-.about-us-index-image
-{
-  background-color: #36499B !important;
-  color: #FF99A7 !important;
+.about-us-index-image {
+  background-color: #36499b !important;
+  color: #ff99a7 !important;
   padding-top: 15vh !important;
   padding-bottom: 10vh !important;
-  
 }
-.about-us-index-image h1
-{
-  color: #FF99A7 !important;
+.about-us-index-image h1 {
+  color: #ff99a7 !important;
 }
