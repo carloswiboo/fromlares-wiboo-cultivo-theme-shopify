@@ -1,0 +1,48 @@
+<div
+  class="about-us-index-image"
+  style="color: #36499b !important; background: white !important"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h1 style="color: #36499b !important">
+            {{section.settings.titleOurFounder}}
+        </h1>
+      </div>
+      <div class="col-md-4">
+        {{section.settings.bioOurFounder}}
+      </div>
+      <div class="col-md-4">
+        <img src="{{ section.settings.image | img_url: 'master' }}" alt="NombrePersona" style="width: 100%;"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+
+{
+    "name": "Our founder",
+    "settings": [
+        {
+            "type": "text",
+            "id": "titleOurFounder",
+            "label": "Título"
+        },
+        {
+            "type": "textarea",
+            "id": "bioOurFounder",
+            "label": "Bio Our Founder"
+        },
+        {
+            "type": "image_picker",
+            "id": "imageFounder",
+            "label": "Image Founder"
+        }
+      
+    ]
+}
+
+{% endschema %}
