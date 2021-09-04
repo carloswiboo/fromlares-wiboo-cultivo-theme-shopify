@@ -9,8 +9,14 @@
             {{section.settings.titleOurFounder}}
         </h1>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-5">
         {{section.settings.bioOurFounder}}
+<BR>
+        <a href="{{section.settings.linkMore}}" class="buttonFromlares my-5">
+            KNOW MORE
+        </a>
+
+
       </div>
       <div class="col-md-4">
         <img src="{{ section.settings.imageFounder | img_url: 'master' }}" alt="NombrePersona" style="width: 100%;"/>
@@ -32,6 +38,11 @@
             "label": "Título"
         },
         {
+            "type": "text",
+            "id": "linkMore",
+            "label": "Liga More"
+        },
+        {
             "type": "textarea",
             "id": "bioOurFounder",
             "label": "Bio Our Founder"
@@ -41,7 +52,7 @@
             "id": "imageFounder",
             "label": "Image Founder"
         }
-      
+        
     ]
 }
 
