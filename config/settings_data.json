@@ -152,8 +152,8 @@
       "image-banner-full": {
         "type": "image-banner-full",
         "settings": {
-          "ImagenFullLoading": "shopify:\/\/shop_images\/Recurso_1-8.png",
-          "ImagenFullLoaded": "shopify:\/\/shop_images\/Numero2_3x_08566e66-b113-4780-ba63-3178519bc0ea.png"
+          "ImagenFullLoading": "shopify:\/\/shop_images\/Numero2_3x_08566e66-b113-4780-ba63-3178519bc0ea.png",
+          "ImagenFullLoaded": "shopify:\/\/shop_images\/foto_portada.png"
         }
       },
       "inicio-banner-completo-imagen": {
