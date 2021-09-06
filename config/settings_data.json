@@ -159,10 +159,10 @@
       "inicio-banner-completo-imagen": {
         "type": "inicio-banner-completo-imagen",
         "settings": {
-          "principalTitle": "FROM OUR <br> HOME TO <br> YOURS",
+          "principalTitle": "HIGH <br> ON <br> COLOR",
           "description": "Lorem ipsum dolor sit amet, consectetuer <br> adipiscing elit,  sed  diam nonummy <br> nibh euismod tincidunt ut  laoreet dolore <br> magna aliquam erat volutpat.",
           "imageDerechaFondo": "shopify:\/\/shop_images\/imageFondoTotal_3x_8f4f8080-177e-41f1-a5b3-7ca9d7edaa11.png",
-          "imagenDerechaPrincipal": "shopify:\/\/shop_images\/Recurso_2_3x_94c9d93b-8262-4252-a475-850bb0b06cdd.png",
+          "imagenDerechaPrincipal": "shopify:\/\/shop_images\/blog.png",
           "button_link": "shopify:\/\/collections\/chromophobia"
         }
       },
