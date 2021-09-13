@@ -228,7 +228,7 @@
       "image-banner-about-us": {
         "type": "image-banner-about-us",
         "settings": {
-          "imageBannePrincipal": "shopify:\/\/shop_images\/Recurso_1-8.png"
+          "imageBannePrincipal": "shopify:\/\/shop_images\/portada.png"
         }
       }
     },
