@@ -127,10 +127,10 @@
         "settings": {
           "Collection_Principal": "chromophobia",
           "Text_Collection_Principal": "",
-          "Imagen_Producto_Coleccion_Izquierda": "shopify:\/\/shop_images\/Recurso_2_3x_94c9d93b-8262-4252-a475-850bb0b06cdd.png",
-          "productUnoFinal": "producto-3",
-          "productDosFinal": "producto-2",
-          "productTresFinal": "producto"
+          "Imagen_Producto_Coleccion_Izquierda": "shopify:\/\/shop_images\/frontcoleccion.png",
+          "productUnoFinal": "marigold",
+          "productDosFinal": "naples-yellow",
+          "productTresFinal": "reseda"
         }
       },
       "header": {
