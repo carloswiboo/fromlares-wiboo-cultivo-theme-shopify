@@ -288,3 +288,9 @@ h6 {
 .about-us-index-image h1 {
   color: #ff99a7 !important;
 }
+
+
+.pagination
+{
+  flex-direction: column;
+}
